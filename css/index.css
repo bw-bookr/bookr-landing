@@ -3,7 +3,7 @@
     -webkit-transform: translate(-50%, 0px);
   }
   50% {
-    -webkit-transform: translate(-50%, -20px);
+    -webkit-transform: translate(-50%, -50px);
   }
   100% {
     -webkit-transform: translate(-50%, 0px);
@@ -141,4 +141,77 @@ p {
   width: 280px;
   -webkit-animation: float 3s ease-in-out infinite;
   animation: float 3s ease-in-out infinite;
+}
+header {
+  background: #ffffff;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+header h1 {
+  font-size: 5.9rem;
+  letter-spacing: -0.3125rem;
+  margin: 50vh 0 20px;
+  color: #000000;
+  line-height: 1;
+  font-weight: 700;
+}
+@media screen and (min-width: 576px) {
+  header h1 {
+    font-size: 6.25rem;
+  }
+}
+header:before,
+header:after {
+  content: '';
+  position: absolute;
+  width: 50vw;
+  height: 80vh;
+  -webkit-transform: rotate(-25deg);
+  transform: rotate(-25deg);
+  z-index: 1;
+}
+header:before {
+  left: -35%;
+  top: -30%;
+  background: linear-gradient(to right, #e2e7ef 0%, #ffffff 100%);
+}
+@media screen and (min-width: 992px) {
+  header:before {
+    left: -15vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  header:before {
+    left: -30%;
+  }
+}
+header:after {
+  right: -17%;
+  top: -15%;
+  background: linear-gradient(to right, #ffffff 0%, #e2e7ef 100%);
+}
+@media screen and (min-width: 992px) {
+  header:after {
+    right: -5vw;
+  }
+}
+header .inner-wrapper {
+  position: relative;
+  z-index: 3;
+}
+header .inner-wrapper > p {
+  margin-bottom: 20px;
+}
+header .inner-wrapper .product-by {
+  position: inherit;
+  z-index: inherit;
+  margin-bottom: 30px;
+}
+header .inner-wrapper .product-by a:hover {
+  text-decoration: none;
+}
+header .inner-wrapper .product-by img {
+  max-width: 180px;
 }
