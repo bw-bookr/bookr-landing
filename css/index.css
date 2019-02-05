@@ -382,6 +382,73 @@ header .product-by p {
     font-size: 1rem;
   }
 }
+.registration {
+  background: #212529;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #e9ecef;
+}
+.registration .heading {
+  margin: 0 auto;
+  text-align: center;
+}
+.registration .title {
+  position: relative;
+  color: #ffffff;
+  margin: 3rem auto;
+  width: 80%;
+}
+.registration .title:after {
+  content: '';
+  width: 3rem;
+  height: 2px;
+  background: #0067f4;
+  position: absolute;
+  left: 50%;
+  margin-left: -1.5rem;
+  bottom: -2rem;
+}
+.registration .register {
+  display: table;
+  margin: 3rem auto;
+}
+.registration .register a {
+  margin: 0 auto;
+  width: 100%;
+  font-size: 18px;
+}
+@media screen and (min-width: 576px) {
+  .registration .register a {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0.5rem;
+    font-size: 24px;
+    font-weight: 500;
+  }
+}
+.registration p {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin: 1.5rem auto;
+  color: #cccccc;
+}
+.registration .share {
+  display: table;
+  margin: 1.5rem auto 3rem;
+  text-align: center;
+}
+.registration .share a {
+  margin: 0.5rem auto;
+  width: 100%;
+}
+@media screen and (min-width: 576px) {
+  .registration .share a {
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+    margin: 0.5rem;
+  }
+}
 .blog {
   padding: 1.5rem 0;
   border-bottom: 1px solid #e9ecef;
