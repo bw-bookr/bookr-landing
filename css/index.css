@@ -402,6 +402,57 @@ header .product-by p {
     font-size: 1rem;
   }
 }
+.blog {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #e9ecef;
+}
+.blog .title {
+  position: relative;
+  margin: 3rem auto;
+}
+.blog .title:after {
+  content: '';
+  width: 3rem;
+  height: 2px;
+  background: #0067f4;
+  position: absolute;
+  left: 50%;
+  margin-left: -1.5rem;
+  bottom: -2rem;
+}
+.blog-wrapper {
+  margin: 3rem auto 4rem;
+}
+.blog-wrapper .blog-post {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  background: #ffffff;
+  border: none;
+  border-radius: 0.625rem;
+  box-shadow: 0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1), 0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1), 0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12), 0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
+  margin-bottom: 2rem;
+}
+.blog-wrapper .blog-post .post-img-top {
+  border-top-left-radius: 0.625rem;
+  border-top-right-radius: 0.625rem;
+  height: 100%;
+}
+.blog-wrapper .blog-post .post-body {
+  padding: 1.875rem;
+}
+.blog-wrapper .blog-post .post-body h4 {
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+.blog-wrapper .blog-post .post-body p {
+  margin-bottom: 1.5625rem;
+}
+.blog-wrapper .blog-post .post-body a {
+  cursor: pointer;
+  width: 100%;
+}
 .team {
   padding: 1.5rem 0;
   border-bottom: 1px solid #e9ecef;
