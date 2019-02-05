@@ -423,6 +423,19 @@ header .product-by p {
 .blog-wrapper {
   margin: 3rem auto 4rem;
 }
+.blog-wrapper .sm-hidden {
+  display: none;
+}
+@media screen and (min-width: 576px) {
+  .blog-wrapper .sm-hidden {
+    display: initial;
+  }
+}
+@media screen and (min-width: 992px) {
+  .blog-wrapper .lg-hidden {
+    display: none;
+  }
+}
 .blog-wrapper .blog-post {
   position: relative;
   display: flex;
