@@ -1,0 +1,40 @@
+.contact {
+	padding: 1.5rem 0;
+
+	.title {
+		position: relative;
+		margin: 3rem auto;
+
+		&:after {
+			content: '';
+			width: 3rem;
+			height: 2px;
+			background: @primary;
+			position: absolute;
+			left: 50%;
+			margin-left: -1.5rem;
+			bottom: -2rem;
+		}
+	}
+
+	.contact-form {
+		padding: 1.5rem auto;
+		width: 100%;
+		margin: 3rem auto;
+		background: @white;
+		border: none;
+		border-radius: .625rem;
+		box-shadow: 0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1), 0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1), 0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12), 0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
+		
+		form {
+			margin: 1.5rem auto;
+		}
+
+		input[type="submit"] {
+			border-radius: 50px;
+			display: flex;
+			cursor: pointer;
+			margin: 0 auto 1.5rem;
+		}
+	}
+}
