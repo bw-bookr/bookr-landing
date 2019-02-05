@@ -408,3 +408,38 @@ header .product-by p {
     margin: 0.5rem;
   }
 }
+.contact {
+  padding: 1.5rem 0;
+}
+.contact .title {
+  position: relative;
+  margin: 3rem auto;
+}
+.contact .title:after {
+  content: '';
+  width: 3rem;
+  height: 2px;
+  background: #0067f4;
+  position: absolute;
+  left: 50%;
+  margin-left: -1.5rem;
+  bottom: -2rem;
+}
+.contact .contact-form {
+  padding: 1.5rem auto;
+  width: 100%;
+  margin: 3rem auto;
+  background: #ffffff;
+  border: none;
+  border-radius: 0.625rem;
+  box-shadow: 0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1), 0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1), 0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12), 0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
+}
+.contact .contact-form form {
+  margin: 1.5rem auto;
+}
+.contact .contact-form input[type="submit"] {
+  border-radius: 50px;
+  display: flex;
+  cursor: pointer;
+  margin: 0 auto 1.5rem;
+}
