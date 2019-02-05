@@ -1,0 +1,32 @@
+.btn {
+    font-weight: 300;
+    border: 1px solid transparent;
+    padding: .75rem 1.25rem;
+    font-size: .875rem;
+    line-height: 1.125;
+    border-radius: .375rem;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:focus {
+        box-shadow: none;
+    }
+
+    &.btn-pill {
+        border-radius: 50px;
+    }
+
+    &.btn-primary {
+        color: @white;
+        border: @primary;
+        background: @primary;
+        box-shadow: none;
+        &:hover {
+            background: lighten(@primary, 20%);
+            border-color: lighten(@primary, 20%);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .05), 0 4px 10px rgba(0, 123, 255, .25);
+        }
+    }
+}
