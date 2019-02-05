@@ -31,9 +31,13 @@
 	.form-inline {
 		display: table;
 		margin: 3rem auto;
-		align-items: center;
-		flex-flow: row wrap;
-		width: 100%;
+
+		.form-group {
+			margin-bottom: 1rem;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
 
 		.form-control {
 			padding: .5rem 1rem;
@@ -50,12 +54,11 @@
 		input {
 			margin: 0 auto;
 
-			@media screen and (min-width: 1000px) {
-				width: 25%;
-			}
-
 			@media screen and (min-width: 500px) {
-				width: 40%;
+				display: inline-block;
+				width: auto;
+				vertical-align: middle;
+				margin: .5rem 0;
 			}
 		}
 
@@ -63,12 +66,11 @@
 			margin: 0 auto;
 			width: 100%;
 
-			@media screen and (min-width: 1000px) {
-				width: 10%;
-			}
-
 			@media screen and (min-width: 500px) {
-				width: 20%;
+				width: auto;
+				display: inline-block;
+				vertical-align: middle;
+				margin: .5rem;
 			}
 		}
 	}

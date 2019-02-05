@@ -367,9 +367,12 @@ header .product-by p {
 .newsletter .form-inline {
   display: table;
   margin: 3rem auto;
-  align-items: center;
-  flex-flow: row wrap;
-  width: 100%;
+}
+.newsletter .form-inline .form-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .newsletter .form-inline .form-control {
   padding: 0.5rem 1rem;
@@ -385,27 +388,23 @@ header .product-by p {
 .newsletter .form-inline input {
   margin: 0 auto;
 }
-@media screen and (min-width: 1000px) {
-  .newsletter .form-inline input {
-    width: 25%;
-  }
-}
 @media screen and (min-width: 500px) {
   .newsletter .form-inline input {
-    width: 40%;
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+    margin: 0.5rem 0;
   }
 }
 .newsletter .form-inline button {
   margin: 0 auto;
   width: 100%;
 }
-@media screen and (min-width: 1000px) {
-  .newsletter .form-inline button {
-    width: 10%;
-  }
-}
 @media screen and (min-width: 500px) {
   .newsletter .form-inline button {
-    width: 20%;
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0.5rem;
   }
 }
