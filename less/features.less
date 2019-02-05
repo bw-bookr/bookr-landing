@@ -47,3 +47,48 @@
 		}
 	}
 }
+
+.features-side {
+	border-bottom: 1px solid @light;
+
+	.features-side-wrapper {
+		margin: 0 auto;
+		padding: 3rem 0;
+
+		h3 {
+			position: relative;
+			margin: 3rem auto;
+	
+			&:after {
+				content: '';
+				width: 6rem;
+				height: 2px;
+				background: @primary;
+				position: absolute;
+				left: 0;
+				margin-left: 0;
+				bottom: -2rem;
+			}
+		}
+	}
+}
+
+.features-side .features-side-wrapper .feature {
+	padding: 1.5rem;
+	display: flex;
+	
+	.icon {
+		border-radius: 50%;
+		min-width: 65px;
+		height: 65px;
+		line-height: 65px;
+		text-align: center;
+		box-shadow: 0 2px 4px rgba(33, 37, 41, 0.1), 0 7px 14px rgba(33, 37, 41, 0.1);
+		font-size: 27px;
+		background: @primary;
+		color: @white;
+		margin-right: 1.5rem;
+	}
+
+	
+}
