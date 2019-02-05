@@ -264,6 +264,9 @@ header .product-by p {
   margin-right: 1.5rem;
   font-size: 1rem;
   font-weight: 400;
+  color: #cccccc;
+}
+.navbar .navbar-brand:hover {
   color: #ffffff;
 }
 .navbar .navbar-toggler {
