@@ -71,36 +71,43 @@ const store = {
 			avatar: "./img/jamie.jpg",
 			name: 'Jamie Hall',
 			position: 'Front-end Developer',
+			github: 'https://github.com/JamieHall1962'
 		},
 		{
 			avatar: "./img/kelli.jpg",
 			name: 'Kelli Rae Hanson',
 			position: 'Front-end Developer',
+			github: 'https://github.com/kelliraehanson'
 		},
 		{
 			avatar: "./img/dennis.jpg",
 			name: 'Dennis Orbison',
 			position: 'Back-end Developer',
+			github: 'https://github.com/nomadic4life'
 		},
 		{
 			avatar: "./img/jeremy.jpg",
 			name: 'Jeremy Boggs',
 			position: 'Scrum Master',
+			github: 'https://github.com/Nicocchi'
 		},
 		{
 			avatar: "./img/maksim.jpg",
 			name: 'Maksim Vakarchuk',
 			position: 'UI Developer',
+			github: 'https://github.com/maks112v'
 		},
 		{
 			avatar: "./img/joshua.jpg",
 			name: 'Joshua Keslar',
 			position: 'UI Developer',
+			github: 'https://github.com/Jkeslar21'
 		},
 		{
 			avatar: "./img/lukasz.jpg",
 			name: 'Lukasz Siatka',
 			position: 'UI Developer',
+			github: 'https://github.com/Estrax'
 		}
 	],
 

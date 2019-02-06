@@ -29,9 +29,11 @@ class Team {
 	}
 
 	renderPerson(data, selector){
-		const person = document.createElement('div');
+		const person = document.createElement('a');
 		person.classList.add('team-member', 'col-sm-12', 'col-md-3');
 		animate(person, 'fade-up');
+		person.setAttribute('href', data.github);
+		person.setAttribute('target', '_blank');
 
 		const avatar = document.createElement('div');
 		avatar.classList.add('avatar');
