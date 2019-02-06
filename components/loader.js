@@ -3,7 +3,7 @@ class Loader {
         this.element = element;
 
         this.render();
-        setTimeout(() => this.hide(), 2500);
+        setTimeout(() => this.hide(), 5000);
     }
 
     render(){
