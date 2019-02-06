@@ -8,520 +8,86 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="./css/index.css">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	</head>
 	<body>
+		<div id="page-top"></div>
 		<!-- preloader -->
-		<div class="loader">
-			<i>.</i>
-			<i>.</i>
-			<i>.</i>
-			<i>.</i>
-			<i>.</i>
-			<i>.</i>
-		</div>
+		<div class="loader"></div>
 		<!-- preloader end -->
 
-		<img src="./img/header-img.png" alt="Bookr" class="bookr">
+		<img/>
 
 		<!-- header -->
-		<header>
-			<div class="inner-wrapper">
-				<h1>Bookr</h1>
-				<p>Your next read. Right there.</p>
-				<div class="action-links">
-					<a href="#" data-scroll-to="#features" class="btn btn-primary btn-pill">Learn more</a>
-				</div>
-			</div>
-			<div class="product-by">
-				<a href="#" target="_blank">
-					<p>A product by the students of:</p>
-					<img src="./img/productby.png" alt="Students of Lambda School - A Revolutionary New School That Invests In You"/>
-				</a>
-			</div>
-		</header>
+		<header></header>
 		<!-- header end -->
 
 		<!-- navbar -->
-		<nav class="navbar navbar-expand-lg navbar-primary fixed-top top">
-			<a href="/" class="navbar-brand">Bookr</a>
-
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-
-			<div class="collapse navbar-collapse" id="navbar">
-				<ul class="navbar-nav">
-					<li class="nav-item active">
-						<a href="#" class="nav-link">
-							Home
-							<span class="sr-only">(current)</span>
-						</a>
-					</li>
-					
-					<li class="nav-item">
-						<a href="#" class="nav-link">
-							Features
-						</a>
-					</li>
-
-					<li class="nav-item">
-						<a href="#" class="nav-link">
-							Blog
-						</a>
-					</li>
-
-					<li class="nav-item">
-						<a href="#" class="nav-link">
-							Team
-						</a>
-					</li>
-
-					<li class="nav-item">
-						<a href="#" class="nav-link">
-							Contact us
-						</a>
-					</li>
-
-					<li class="nav-item">
-						<a href="https://bookrfrontend1.netlify.com" class="nav-link">
-							Log in
-						</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
+		<nav></nav>
 		<!-- navbar end -->
 
 		<!-- features -->
-		<section class="features">
-			<div class="container">
-				<div class="row">
-					<h2 class="title">
-						Overview
-					</h2>
-				</div>
-				<div class="row features-container">
-					<div class="feature col-sm-12 col-md-6">
-						<div class="icon">
-							<i class="fa fa-globe"></i>
-						</div>
-						<div class="feature-body">
-							<h5>Available worldwide</h5>
-							<p>We help people in over 110 countries (and counting!) discover new books. Stop by and check what we have to offer.</p>
-						</div>
-					</div>
-					<div class="feature col-sm-12 col-md-6">
-						<div class="icon">
-							<i class="fa fa-users"></i>
-						</div>
-						<div class="feature-body">
-							<h5>Peer reviewed books</h5>
-							<p>Bored with going through the list of random books? We got you covered. Only the best, peer-reviewed books there.</p>
-						</div>
-					</div>
-					<div class="feature col-sm-12 col-md-6">
-						<div class="icon">
-							<i class="fa fa-credit-card"></i>
-						</div>
-						<div class="feature-body">
-							<h5>Your new book is only 5 clicks away</h5>
-							<p>Buying your new books was never easier. It's only 5 clicks away of you!</p>
-						</div>
-					</div>
-					<div class="feature col-sm-12 col-md-6">
-						<div class="icon">
-							<i class="fa fa-forward"></i>
-						</div>
-						<div class="feature-body">
-							<h5>We do it FAST</h5>
-							<p>No time to search for a new book? No worries. We will deliver you the best options in less than 10 seconds.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+		<section class="features" id="features"></section>
 		<!-- features end -->
 
 		<!-- why bookr -->
-		<section class="features-side">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="app-screenshot-wrapper col-sm-12 col-md-12 col-lg-4">
-						<img src="./img/app-screenshot.jpg" alt="App screenshot">
-					</div>
-					<div class="features-side-wrapper col-sm-12 col-md-6 col-lg-4">
-						<div class="container">
-							<h3>Why Bookr</h3>
-							<div class="feature">
-								<div class="icon">
-									<i class="fa fa-eye"></i>
-								</div>
-								<div class="feature-body">
-									<h5>We make reading painless</h5>
-									<p>Spend less time on searching for a book and more time reading the books you love.</p>
-								</div>
-							</div>
-
-							<div class="feature">
-								<div class="icon">
-									<i class="fa fa-book"></i>
-								</div>
-								<div class="feature-body">
-									<h5>For readers, by readers</h5>
-									<p>We love books. And we know you do too. We made Bookr to help you dive in the next amazing story.</p>
-								</div>
-							</div>
-							<div class="feature">
-								<div class="icon">
-									<i class="fa fa-check"></i>
-								</div>
-								<div class="feature-body">
-									<h5>Low cost. Forever.</h5>
-									<p>Get up to 20 recommended books monthly at&nbsp;no&nbsp;price. After that, only $9 for every 20&nbsp;books!</p>
-								</div>
-							</div>
-							<div class="feature">
-								<div class="icon">
-									<i class="fa fa-thumbs-up"></i>
-								</div>
-								<div class="feature-body">
-									<h5>High quality recommendations</h5>
-									<p>Discover a wide range of hand-picked books of different genres, each paired with a short explanation to help you decide.</p>
-								</div>
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+		<section class="features-side"></section>
 		<!-- why bookr end -->
 
 		<!-- testimonials -->
-		<section class="testimonials">
-			<div class="container">
-				<div class="row">
-					<h2 class="title">Testimonials</h2>
-				</div>
-				<div class="row people">
-					<div class="col-sm-12 col-md-4 testimonial">
-						<div class="avatar">
-							<img src="./img/testimonial-1.png" alt="Austen Allred">
-						</div>
-						<h5>Austen Allred</h5>
-						<span>CEO at Lambda School</span>
-						<p>Bookr is my starting point for getting the next book to read. My favourite service up to date. Everything is really simple and you can order your next book under 5 clicks!</p>
-					</div>
-					<div class="col-sm-12 col-md-4 testimonial">
-						<div class="avatar">
-							<img src="./img/testimonial-2.png" alt="Testimonial avatar 2">
-						</div>
-						<h5>Ben Nelson</h5>
-						<span>CTO at Lambda School</span>
-						<p>Bookr is an accurate reply to my needs as an avid reader. Forget about searching for the next book with Google Search :) THANK&nbsp;YOU&nbsp;BOOKR!</p>
-					</div>
-					<div class="col-sm-12 col-md-4 testimonial">
-						<div class="avatar">
-							<img src="./img/testimonial-3.png" alt="Testimonial avatar 3">
-						</div>
-						<h5>Brandon Vilaychith</h5>
-						<span>Project Manager at Lambda School</span>
-						<p>I love the tools that work without all that unnecessary technical bullshit and satisfy my needs - like the fridge - I&nbsp;just open it and take a cold drink. Same with Bookr - I&nbsp;log&nbsp;in, select the category of books I am interested in and immediately get the top notch recommendations.</p>
-					</div>
-				</div>
-			</div>
-		</section>
+		<section class="testimonials"></section>
 		<!-- testimonials end -->
 
 		<!-- full width panel (registration) -->
-		<section class="registration">
-			<div class="container">
-				<div class="row heading">
-					<h2 class="title">What are you waiting for?</h2>
-					<div class="col-sm-12 offset-md-1 col-md-10 offset-lg-2 col-lg-8">
-						<p>Go ahead and read something!</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-12 offset-md-4 col-md-4 offset-lg-4 col-lg-4 register">
-						<a href="https://bookrfrontend1.netlify.com" class="btn btn-lg btn-primary">
-							Register
-						</a>
-					</div>
-				</div>
-				<div class="row">
-					<p>Can't wait to see what you pick up to read! If you like Bookr, make sure you share it with your friends too!</p>
-					<div class="col-sm-12 offset-md-1 col-md-10 offset-lg-2 col-lg-8 share">
-						<a href="#" class="btn btn-primary">
-							<i class="fa fa-facebook"></i>
-							Share on Facebook
-						</a>
-
-						<a href="#" class="btn btn-primary">
-							<i class="fa fa-twitter"></i>
-							Share on Twitter
-						</a>
-
-						<a href="#" class="btn btn-primary">
-							<i class="fa fa-linkedin"></i>
-							Share on LinkedIn
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
+		<section class="registration"></section>
 		<!-- full width panel (registration) end -->
 
 		<!-- blog posts -->
-		<section class="blog">
-			<div class="container">
-				<div class="row">
-					<h2 class="title">Blog posts</h2>
-				</div>
-				<div class="row blog-wrapper">
-					<div class="col-sm-12 col-md-6 col-lg-4">
-						<div class="blog-post">
-							<img src="./img/blog-img1.jpg" alt="Blog image 1" class="post-img-top"/>
-							<div class="post-body">
-								<h4>Great books about your favorite musicians</h4>
-								<a href="#" class="btn btn-primary">Read more</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-12 col-md-6 col-lg-4">
-						<div class="blog-post">
-							<img src="./img/blog-img2.jpg" alt="Blog image 2" class="post-img-top"/>
-							<div class="post-body">
-								<h4>The best books about medieval castles in Western Europe</h4>
-								<a href="#" class="btn btn-primary">Read more</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-12 col-md-6 col-lg-4 sm-hidden">
-						<div class="blog-post">
-							<img src="./img/blog-img3.jpg" alt="Blog image 3" class="post-img-top"/>
-							<div class="post-body">
-								<h4>Ten great books to read about photography</h4>
-								<a href="#" class="btn btn-primary">Read more</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-12 col-md-6 col-lg-4 sm-hidden lg-hidden">
-						<div class="blog-post">
-							<img src="./img/blog-img4.jpg" alt="Blog image 4" class="post-img-top"/>
-							<div class="post-body">
-								<h4>The greatest books to read while travelling</h4>
-								<a href="#" class="btn btn-primary">Read more</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+		<section class="blog" id="blog"></section>
 		<!-- blog posts end -->
 
 		<!-- team -->
-		<section class="team">
-			<div class="container">
-				<div class="row">
-					<h2 class="title">Our Team</h2>
-				</div>
-				<div class="row people">
-					<div class="col-sm-6 col-md-3 team-member">
-						<div class="avatar">
-							<img src="./img/jamie.jpg" alt="Jamie Hall">
-						</div>
-						<h5>Jamie Hall</h5>
-						<span>Front-end Developer</span>
-					</div>
-					<div class="col-sm-6 col-md-3 team-member">
-						<div class="avatar">
-							<img src="./img/kelli.jpg" alt="Kelli Rae Hanson">
-						</div>
-						<h5>Kelli Rae Hanson</h5>
-						<span>Front-end Developer</span>
-					</div>
-					<div class="col-sm-6 col-md-3 team-member">
-						<div class="avatar">
-							<img src="./img/dennis.jpg" alt="Dennis Orbison">
-						</div>
-						<h5>Dennis Orbison</h5>
-						<span>Back-end Developer</span>
-					</div>
-					<div class="col-sm-6 col-md-3 team-member">
-						<div class="avatar">
-							<img src="./img/jeremy.jpg" alt="Jeremy Boggs">
-						</div>
-						<h5>Jeremy Boggs</h5>
-						<span>Scrum Master</span>
-					</div>
-					<div class="col-sm-6 col-md-3 team-member">
-						<div class="avatar">
-							<img src="./img/maksim.jpg" alt="Maksim Vakarchuk">
-						</div>
-						<h5>Maksim Vakarchuk</h5>
-						<span>UI Developer</span>
-					</div>
-					<div class="col-sm-6 col-md-3 team-member">
-						<div class="avatar">
-							<img src="./img/joshua.jpg" alt="Joshua Keslar">
-						</div>
-						<h5>Joshua Keslar</h5>
-						<span>UI Developer</span>
-					</div>
-					<div class="col-sm-6 col-md-3 team-member">
-						<div class="avatar">
-							<img src="./img/lukasz.jpg" alt="Lukasz Siatka">
-						</div>
-						<h5>Lukasz Siatka</h5>
-						<span>UI Developer</span>
-					</div>
-				</div>
-			</div>
-		</section>
+		<section class="team" id="team"></section>
 		<!-- team end -->
 
 		<!-- newsletter -->
-		<section class="newsletter">
-			<div class="container">
-				<div class="row">
-					<h3 class="title">Newsletter</h3>
-					<p>
-						Get the best books straight to your inbox and <b>follow the magic.</b><br/>
-						No fluff, no bullshit. We send only the greatest books once a month.<br/>
-						Join the best community of avid readers.
-					</p>
-				</div>
-				<div class="row">
-					<form action="#" class="form-inline">
-						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Email address">
-							<button class="btn btn-primary">Subscribe</button>
-						</div>
-					</form>
-				</div>
-			</div>
-		</section>
+		<section class="newsletter"></section>
 		<!-- newsletter end -->
 
 		<!-- contact form -->
-		<section class="contact">
-			<div class="container">
-				<div class="row">
-					<h2 class="title">Contact Us</h2>
-				</div>
-				<div class="row">
-					<div class="contact-form col-sm-12 col-md-10 col-lg-7">
-						<form action="#">
-							<div class="row">
-								<div class="col-sm-12 col-md-6">
-									<div class="form-group">
-										<label for="contactFormFullName">Full Name</label>
-										<input type="text" class="form-control" id="contactFormFullName" placeholder="Enter your full name">
-									</div>
-								</div>
-								<div class="col-sm-12 col-md-6">
-									<div class="form-group">
-										<label for="contactFormEmail">Email address</label>
-										<input type="email" class="form-control" id="contactFormEmail" placeholder="Enter your email address">
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col">
-									<div class="form-group">
-										<label for="contactFormInput">Message</label>
-										<textarea class="form-control" name="message" id="contactFormInput" rows="10" placeholder="Enter your message..."></textarea>
-									</div>
-								</div>
-							</div>
-							<input class="btn btn-primary" type="submit" value="Send your message">
-						</form>
-					</div>
-				</div>
-			</div>
-		</section>
+		<section class="contact" id="contact"></section>
 		<!-- contact form end -->
 
 		<!-- footer -->
-		<footer>
-			<nav class="navbar navbar-expand-lg navbar-primary">
-				<a href="/" class="navbar-brand">Bookr</a>
-	
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-footer" aria-controls="navbar-footer" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-	
-				<div class="collapse navbar-collapse" id="navbar-footer">
-					<ul class="navbar-nav">
-						<li class="nav-item active">
-							<a href="#" class="nav-link">
-								Home
-								<span class="sr-only">(current)</span>
-							</a>
-						</li>
-						
-						<li class="nav-item">
-							<a href="#" class="nav-link">
-								Features
-							</a>
-						</li>
-	
-						<li class="nav-item">
-							<a href="#" class="nav-link">
-								Blog
-							</a>
-						</li>
-	
-						<li class="nav-item">
-							<a href="#" class="nav-link">
-								Team
-							</a>
-						</li>
-	
-						<li class="nav-item">
-							<a href="#" class="nav-link">
-								Contact us
-							</a>
-						</li>
-	
-						<li class="nav-item">
-							<a href="https://bookrfrontend1.netlify.com" class="nav-link">
-								Log in
-							</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-			<div class="container footer-body">
-				<div class="row">
-					<p>
-						Copyright &copy; 2019 Bookr. All rights reserved.
-					</p>
-					<div class="social">
-						<a href="#" target="_blank">
-							<i class="fa fa-facebook"></i>
-							<span class="sr-only">Visit us at Facebook</span>
-						</a>
-						<a href="#" target="_blank">
-							<i class="fa fa-twitter"></i>
-							<span class="sr-only">Visit us at Twitter</span>
-						</a>
-						<a href="#" target="_blank">
-							<i class="fa fa-github"></i>
-							<span class="sr-only">View our Github repository</span>
-						</a>
-					</div>
-				</div>
-			</div>
-		</footer>
+		<footer></footer>
 		<!-- footer end -->
 
 		<!-- scripts -->
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-		<script src="js/main.js"></script>
+		<script src="./js/main.js"></script>
+		<script src="./js/shuffle.js"></script>
+		<script src="./js/animate.js"></script>
+		<script src="./components/modal.js"></script>
+		<script src="./components/loader.js"></script>
+		<script src="./components/top-img.js"></script>
+		<script src="./components/navbar.js"></script>
+		<script src="./components/header.js"></script>
+		<script src="./components/features.js"></script>
+		<script src="./components/features-side.js"></script>
+		<script src="./components/testimonials.js"></script>
+		<script src="./components/registration.js"></script>
+		<script src="./components/blogposts.js"></script>
+		<script src="./components/team.js"></script>
+		<script src="./components/newsletter.js"></script>
+		<script src="./components/contact.js"></script>
+		<script src="./components/footer.js"></script>
+		
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
 		<!-- scripts end-->
 	</body>
 </html>
