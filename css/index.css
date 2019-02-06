@@ -20,6 +20,42 @@
     transform: translate(-50%, 0px);
   }
 }
+@-webkit-keyframes dots {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(60px, 0, 0);
+  }
+  30% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+  70% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(-300px, 0, 0);
+  }
+}
+@keyframes dots {
+  0% {
+    opacity: 0;
+    transform: translate3d(60px, 0, 0);
+  }
+  30% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  70% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(-300px, 0, 0);
+  }
+}
 .btn {
   font-weight: 300;
   border: 1px solid transparent;
@@ -273,6 +309,29 @@ header .product-by p {
 .navbar .navbar-nav .nav-link:hover {
   color: #ffffff;
 }
+.navbar.top {
+  background: transparent;
+  color: #000000;
+}
+.navbar.top .navbar-brand {
+  color: #333333;
+}
+.navbar.top .navbar-brand:hover {
+  color: #000000;
+}
+.navbar.top .navbar-toggler {
+  color: #000000;
+  border: 1px solid #000000;
+}
+.navbar.top .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar.top .navbar-nav .nav-link {
+  color: #333333;
+}
+.navbar.top .navbar-nav .nav-link:hover {
+  color: #000000;
+}
 .features {
   padding: 3rem 0 1.5rem;
   margin-bottom: 1.5rem;
@@ -337,6 +396,46 @@ header .product-by p {
   left: 0;
   margin-left: 0;
   bottom: -2rem;
+}
+.features-side .app-screenshot-wrapper {
+  background: url('../img/feature-side.jpg') no-repeat center right fixed;
+  background-size: cover;
+  padding: 3rem 0;
+}
+.features-side .app-screenshot-wrapper:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #e9ecef;
+  opacity: 0.2;
+}
+.features-side .app-screenshot-wrapper img {
+  display: table;
+  position: static;
+  -webkit-transform: translate(0);
+  transform: translate(0);
+  margin: 0 auto;
+  width: auto;
+  max-width: 240px;
+}
+@media screen and (min-width: 320px) {
+  .features-side .app-screenshot-wrapper img {
+    max-width: 300px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .features-side .app-screenshot-wrapper img {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    box-shadow: 0 13px 25px rgba(0, 0, 0, 0.05), 0 60px 100px rgba(192, 192, 192, 0.5);
+  }
 }
 .features-side .features-side-wrapper .feature {
   padding: 1.5rem;
@@ -534,7 +633,7 @@ header .product-by p {
 .blog-wrapper .blog-post .post-img-top {
   border-top-left-radius: 0.625rem;
   border-top-right-radius: 0.625rem;
-  height: 100%;
+  width: 100%;
 }
 .blog-wrapper .blog-post .post-body {
   padding: 1.875rem;
@@ -542,9 +641,11 @@ header .product-by p {
 .blog-wrapper .blog-post .post-body h4 {
   font-weight: 500;
   margin-bottom: 0.75rem;
+  word-break: break-word;
 }
 .blog-wrapper .blog-post .post-body p {
   margin-bottom: 1.5625rem;
+  word-break: break-word;
 }
 .blog-wrapper .blog-post .post-body a {
   cursor: pointer;
@@ -746,4 +847,54 @@ footer .footer-body .social a {
 }
 footer .footer-body .social a:hover {
   color: #666666;
+}
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #ffffff;
+  z-index: 2000;
+  transition: opacity 0.5s ease-in-out;
+}
+.loader i {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: black;
+  border-radius: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -8px 0 0 -8px;
+  opacity: 0;
+  -webkit-transform: translate3d(60px, 0, 0);
+  overflow: hidden;
+  text-indent: -9999px;
+  border: 2px solid white;
+}
+.loader i:nth-child(1) {
+  background: #c4183c;
+  animation: dots 2s ease-in-out infinite;
+}
+.loader i:nth-child(2) {
+  background: #ffb400;
+  animation: dots 2s ease-in-out infinite 0.1s;
+}
+.loader i:nth-child(3) {
+  background: #0067f4;
+  animation: dots 2s ease-in-out infinite 0.2s;
+}
+.loader i:nth-child(4) {
+  background: #17c671;
+  animation: dots 2s ease-in-out infinite 0.3s;
+}
+.loader i:nth-child(5) {
+  background: #00b8d8;
+  animation: dots 2s ease-in-out infinite 0.4s;
+}
+.loader i:nth-child(6) {
+  background: #212529;
+  animation: dots 2s ease-in-out infinite 0.5s;
 }

@@ -1,0 +1,52 @@
+.loader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: @white;
+	z-index: 2000;
+    transition: opacity .5s ease-in-out;
+
+    i {
+        display: block;
+        width: 32px;
+        height: 32px;
+        background: black;
+        border-radius: 16px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -8px 0 0 -8px;
+        opacity: 0;
+        -webkit-transform: translate3d(60px,0,0);
+        overflow: hidden;
+        text-indent: -9999px;
+        border: 2px solid white;
+        &:nth-child(1) {
+            background: @danger;
+            animation: dots 2s ease-in-out infinite;
+        }
+        &:nth-child(2) {
+            background: @warning;
+            animation: dots 2s ease-in-out infinite .1s;
+        }
+        &:nth-child(3) {
+            background: @primary;
+            animation: dots 2s ease-in-out infinite .2s;
+        }
+        &:nth-child(4) {
+            background: @success;
+            animation: dots 2s ease-in-out infinite .3s;
+        }
+        &:nth-child(5) {
+            background: @info;
+            animation: dots 2s ease-in-out infinite .4s;
+        }
+
+        &:nth-child(6) {
+            background: @dark;
+            animation: dots 2s ease-in-out infinite .5s;
+        }
+    }
+}
