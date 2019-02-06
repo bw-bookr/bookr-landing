@@ -1,7 +1,8 @@
 class Navbar {
-	constructor(element, data){
+	constructor(element, data, items){
 		this.element = element;
 		this.data = data;
+		this.items = items;
 		this.toggled = false;
 		this.open = false;
 
@@ -40,7 +41,7 @@ class Navbar {
 		const navbarNav = document.createElement('ul');
 		navbarNav.classList.add('navbar-nav');
 
-		store.navbarItems.forEach(elem => this.renderNavbarItem(elem, navbarNav));
+		this.items.forEach(elem => this.renderNavbarItem(elem, navbarNav));
 
 		nbCollapse.append(navbarNav);
 		this.element.appendChild(nbCollapse);
@@ -61,8 +62,9 @@ class Navbar {
 	}
 }
 
-const navbar = new Navbar(document.querySelector('nav'), {'data-target': '#navbar', 'id': 'navbar'});
+const navbar = new Navbar(document.querySelector('nav'), {'data-target': '#navbar', 'id': 'navbar'}, store.navbarItems);
 navbar.element.classList.add('fixed-top', 'top');
+animate(navbar.element, 'fade-down');
 
 // navbar background toggle
 document.addEventListener('scroll', () => {

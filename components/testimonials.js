@@ -30,6 +30,7 @@ class Testimonials {
 	renderTestimonial(data, selector){
 		const testimonial = document.createElement('div');
 		testimonial.classList.add('testimonial', 'col-sm-12', 'col-md-4');
+		animate(testimonial, 'fade-up');
 
 		const avatar = document.createElement('div');
 		avatar.classList.add('avatar');

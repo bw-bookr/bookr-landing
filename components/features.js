@@ -31,6 +31,8 @@ class Features {
 		const feature = document.createElement('div');
 		feature.classList.add('feature', 'col-sm-12', 'col-md-6');
 
+		animate(feature, 'fade-up');
+
 		const icon = document.createElement('div');
 		icon.classList.add('icon');
 

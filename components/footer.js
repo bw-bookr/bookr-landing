@@ -7,13 +7,14 @@ class Footer {
 	render(){
 		const footerNav = document.createElement('nav');
 		
-		const footerNavigation = new Navbar(footerNav, {'data-target': '#footer-nav', 'id': 'footer-nav'});
+		const footerNavigation = new Navbar(footerNav, {'data-target': '#footer-nav', 'id': 'footer-nav'}, store.navbarItems);
 
 		this.element.appendChild(footerNav);
-
+		animate(footerNav, 'fade-up');
 
 		const footerBody = document.createElement('div');
 		footerBody.classList.add('container', 'footer-body');
+		animate(footerBody, 'fade-in');
 
 		const row = document.createElement('div');
 		row.classList.add('row');

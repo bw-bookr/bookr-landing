@@ -32,6 +32,9 @@ class BlogPost {
 	renderBlogPost(data, selector, smHidden, lgHidden){
 		const postWrapper = document.createElement('div');
 		postWrapper.classList.add('col-sm-12', 'col-md-6', 'col-lg-4');
+		
+		animate(postWrapper, 'fadeIn');
+
 		if(smHidden) postWrapper.classList.add('sm-hidden');
 		if(lgHidden) postWrapper.classList.add('lg-hidden');
 

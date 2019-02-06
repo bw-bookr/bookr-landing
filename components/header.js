@@ -28,8 +28,10 @@ class Header {
 		actionLinks.append(learnMoreBtn);
 
 		innerWrapper.appendChild(actionLinks);
+		animate(innerWrapper, 'fade-up');
 
 		this.element.appendChild(innerWrapper);
+		
 
 		
 		const productBy = document.createElement('div');
@@ -50,6 +52,7 @@ class Header {
 		lambdaLink.appendChild(lambda_img);
 
 		productBy.appendChild(lambdaLink);
+
 		this.element.appendChild(productBy);
 	}
 }

@@ -8,6 +8,7 @@ class RegistrationPanel {
 	render(){
 		const container = document.createElement('div');
 		container.classList.add('container');
+		animate(container, 'fade-up');
 
 		const row1 = document.createElement('div');
 		row1.classList.add('row', 'heading');

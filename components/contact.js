@@ -31,6 +31,8 @@ class ContactForm {
 	renderContactForm(selector){
 		const contactForm = document.createElement('div');
 		contactForm.classList.add('contact-form', 'col-sm-12', 'col-md-10', 'col-lg-7');
+		
+		animate(contactForm, 'fade-up');
 
 		const form = document.createElement('form');
 		form.setAttribute('action', '#');

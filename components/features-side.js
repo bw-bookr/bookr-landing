@@ -43,6 +43,8 @@ class FeaturesSide {
 		const feature = document.createElement('div');
 		feature.classList.add('feature');
 
+		animate(feature, 'fade-up');
+
 		const icon = document.createElement('div');
 		icon.classList.add('icon');
 

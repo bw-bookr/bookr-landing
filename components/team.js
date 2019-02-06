@@ -7,6 +7,7 @@ class Team {
 	render(){
 		const container = document.createElement('div');
 		container.classList.add('container');
+		animate(container, 'fade-in');
 
 		const row1 = document.createElement('div');
 		row1.classList.add('row');
@@ -28,8 +29,9 @@ class Team {
 	}
 
 	renderPerson(data, selector){
-		const testimonial = document.createElement('div');
-		testimonial.classList.add('team-member', 'col-sm-12', 'col-md-3');
+		const person = document.createElement('div');
+		person.classList.add('team-member', 'col-sm-12', 'col-md-3');
+		animate(person, 'fade-up');
 
 		const avatar = document.createElement('div');
 		avatar.classList.add('avatar');
@@ -39,17 +41,17 @@ class Team {
 		avatarImg.setAttribute('alt', data.name);
 		
 		avatar.appendChild(avatarImg);
-		testimonial.appendChild(avatar);
+		person.appendChild(avatar);
 
 		const h5 = document.createElement('h5');
 		h5.textContent = data.name;
-		testimonial.appendChild(h5);
+		person.appendChild(h5);
 
 		const span = document.createElement('span');
 		span.textContent = data.position;
-		testimonial.appendChild(span);
+		person.appendChild(span);
 
-		selector.appendChild(testimonial);
+		selector.appendChild(person);
 	}
 }
 
