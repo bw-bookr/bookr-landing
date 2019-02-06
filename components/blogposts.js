@@ -21,7 +21,9 @@ class BlogPost {
 		const row2 = document.createElement('div');
 		row2.classList.add('row', 'blog-wrapper');
 
-		store.blogposts.forEach((elem, i) => this.renderBlogPost(elem, row2, i>1, i>2));
+		shuffle(store.blogposts)
+			.filter((_, i) => i < 4)
+			.forEach((elem, i) => this.renderBlogPost(elem, row2, i>1, i>2));
 
 		container.appendChild(row2);
 		this.element.appendChild(container);

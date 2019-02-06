@@ -119,7 +119,31 @@ const store = {
 		},
 		{
 			img: './img/blog-img4.jpg',
-			title: 'The greatest books to read while travelling'
+			title: 'The best satire books to read while travelling'
+		},
+		{
+			img: './img/blog-img5.jpg',
+			title: 'The best fantasy books to read before sleep'
+		},
+		{
+			img: './img/blog-img6.jpg',
+			title: 'Motivational books that will change your life'
+		},
+		{
+			img: './img/blog-img7.jpg',
+			title: 'TOP 10 popular books for babies 0-3 years old'
+		},
+		{
+			img: './img/blog-img8.jpg',
+			title: 'The greatest sea adventure books of all time'
+		},
+		{
+			img: './img/blog-img9.jpg',
+			title: 'Four stories that will heal every broken heart.'
+		},
+		{
+			img: './img/blog-img10.jpg',
+			title: 'The greatest science-fiction books of all time'
 		}
 	],
 
