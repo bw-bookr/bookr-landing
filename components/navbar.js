@@ -1,6 +1,7 @@
 class Navbar {
-    constructor(element){
+    constructor(element, data){
         this.element = element;
+        this.data = data;
         this.toggled = false;
         this.open = false;
 
@@ -8,7 +9,7 @@ class Navbar {
     }
 
     render(){
-        this.element.classList.add('navbar', 'navbar-expand-lg', 'navbar-primary', 'fixed-top', 'top');
+        this.element.classList.add('navbar', 'navbar-expand-lg', 'navbar-primary');
 
         const navbarBrand = document.createElement('a');
         navbarBrand.classList.add('navbar-brand');
@@ -21,7 +22,7 @@ class Navbar {
         navbarToggler.classList.add('navbar-toggler');
         navbarToggler.setAttribute('type', 'button');
         navbarToggler.setAttribute('data-toggle', 'collapse');
-        navbarToggler.setAttribute('data-target', '#navbar');
+        navbarToggler.setAttribute('data-target', this.data['data-target']);
         navbarToggler.setAttribute('aria-controls', 'navbar');
         navbarToggler.setAttribute('aria-expanded', 'false');
         navbarToggler.setAttribute('aria-label', 'Toggle navigation');
@@ -33,7 +34,7 @@ class Navbar {
         this.element.appendChild(navbarToggler);
 
         const nbCollapse = document.createElement('div');
-        nbCollapse.setAttribute('id', 'navbar');
+        nbCollapse.setAttribute('id', this.data['id']);
         nbCollapse.classList.add('collapse', 'navbar-collapse');
 
         const navbarNav = document.createElement('ul');
@@ -60,7 +61,8 @@ class Navbar {
     }
 }
 
-const navbar = new Navbar(document.querySelector('nav'));
+const navbar = new Navbar(document.querySelector('nav'), {'data-target': '#navbar', 'id': 'navbar'});
+navbar.element.classList.add('fixed-top', 'top');
 
 // navbar background toggle
 document.addEventListener('scroll', () => {

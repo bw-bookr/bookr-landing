@@ -7,6 +7,11 @@ class Footer {
     render(){
         const footerNav = document.createElement('nav');
         
+        const footerNavigation = new Navbar(footerNav, {'data-target': '#footer-nav', 'id': 'footer-nav'});
+
+        this.element.appendChild(footerNav);
+
+
         const footerBody = document.createElement('div');
         footerBody.classList.add('container', 'footer-body');
 
@@ -21,8 +26,6 @@ class Footer {
         const social = document.createElement('div');
         social.classList.add('social');
 
-        
-        ///////////////////////////
 
         const facebookLink = document.createElement('a');
         facebookLink.setAttribute('target', '_blank');
@@ -72,10 +75,6 @@ class Footer {
         facebookLink.appendChild(githubSpan);
 
         social.appendChild(githubLink);
-
-
-        ///////////////////////////
-
 
         row.appendChild(social);
         footerBody.appendChild(row);

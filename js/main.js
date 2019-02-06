@@ -161,5 +161,10 @@ const store = {
             link: 'https://bookrfrontend1.netlify.com',
             name: 'Log in'
         }
-    ]
+    ],
+
+    topImg: {
+        alt: 'Bookr',
+        src: './img/header-img.png'
+    }
 }
