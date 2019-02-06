@@ -19,7 +19,7 @@ class Footer {
 		row.classList.add('row');
 
 		const copyright = document.createElement('p');
-		copyright.innerHTML = `Copyright &copy; 2019-${(new Date()).getFullYear()} Bookr.<br/>All rights reserved.`;
+		copyright.innerHTML = `Copyright &copy; ${(new Date()).getFullYear()} Bookr.<br/>All rights reserved.`;
 		
 		row.appendChild(copyright);
 
