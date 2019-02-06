@@ -23,7 +23,7 @@ class Header {
 		learnMoreBtn.classList.add('btn', 'btn-primary', 'btn-pill');
 		learnMoreBtn.textContent = "Learn more";
 		learnMoreBtn.setAttribute('data-scroll-to', '#features');
-		learnMoreBtn.setAttribute('href', '#');
+		learnMoreBtn.setAttribute('href', '#features');
 
 		actionLinks.append(learnMoreBtn);
 
