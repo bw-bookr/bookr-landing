@@ -162,23 +162,23 @@ const store = {
 
 	navbarItems: [
 		{
-			link: '/',
+			link: '#page-top',
 			name: 'Home'
 		},
 		{
-			link: '#',
+			link: '#features',
 			name: 'Features'
 		},
 		{
-			link: '#',
+			link: '#blog',
 			name: 'Blog'
 		},
 		{
-			link: '#',
+			link: '#team',
 			name: 'Team'
 		},
 		{
-			link: '#',
+			link: '#contact',
 			name: 'Contact us'
 		},
 		{

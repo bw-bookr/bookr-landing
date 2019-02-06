@@ -898,3 +898,6 @@ footer .footer-body .social a:hover {
   background: #212529;
   animation: dots 2s ease-in-out infinite 0.5s;
 }
+html {
+  scroll-behavior: smooth;
+}
