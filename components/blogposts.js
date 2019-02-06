@@ -57,11 +57,21 @@ class BlogPost {
 
 		const btn = document.createElement('a');
 		btn.classList.add('btn', 'btn-primary');
-		btn.setAttribute('href', '#');
+		btn.setAttribute('href', `#blogpost-${data.id}`);
 		btn.textContent = "Read more";
+		btn.setAttribute('data-toggle', 'modal');
+		btn.setAttribute('data-target', `#blogpost-${data.id}`);
 		postBody.appendChild(btn);
 
 		blogPost.appendChild(postBody);
+
+
+		const modalDiv = document.createElement('div');
+		modalDiv.classList.add('modal');
+		
+		const modal = new Modal(modalDiv, data);
+
+		blogPost.appendChild(modalDiv);
 		postWrapper.appendChild(blogPost);
 		selector.appendChild(postWrapper);
 	}

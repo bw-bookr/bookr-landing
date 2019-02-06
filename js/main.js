@@ -68,42 +68,49 @@ const store = {
 
 	team: [
 		{
+			id: 1,
 			avatar: "./img/jamie.jpg",
 			name: 'Jamie Hall',
 			position: 'Front-end Developer',
 			github: 'https://github.com/JamieHall1962'
 		},
 		{
+			id: 2,
 			avatar: "./img/kelli.jpg",
 			name: 'Kelli Rae Hanson',
 			position: 'Front-end Developer',
 			github: 'https://github.com/kelliraehanson'
 		},
 		{
+			id: 3,
 			avatar: "./img/dennis.jpg",
 			name: 'Dennis Orbison',
 			position: 'Back-end Developer',
 			github: 'https://github.com/nomadic4life'
 		},
 		{
+			id: 4,
 			avatar: "./img/jeremy.jpg",
 			name: 'Jeremy Boggs',
 			position: 'Scrum Master',
 			github: 'https://github.com/Nicocchi'
 		},
 		{
+			id: 5,
 			avatar: "./img/maksim.jpg",
 			name: 'Maksim Vakarchuk',
 			position: 'UI Developer',
 			github: 'https://github.com/maks112v'
 		},
 		{
+			id: 6,
 			avatar: "./img/joshua.jpg",
 			name: 'Joshua Keslar',
 			position: 'UI Developer',
 			github: 'https://github.com/Jkeslar21'
 		},
 		{
+			id: 7,
 			avatar: "./img/lukasz.jpg",
 			name: 'Lukasz Siatka',
 			position: 'UI Developer',
@@ -113,42 +120,52 @@ const store = {
 
 	blogposts: [
 		{
+			id: 1,
 			img: './img/blog-img1.jpg',
 			title: 'Great books about legendary female singers'
 		},
 		{
+			id: 2,
 			img: './img/blog-img2.jpg',
 			title: 'The best books about medieval castles in Europe'
 		},
 		{
+			id: 3,
 			img: './img/blog-img3.jpg',
 			title: 'Ten great books to read about photography'
 		},
 		{
+			id: 4,
 			img: './img/blog-img4.jpg',
 			title: 'The best satire books to read while travelling'
 		},
 		{
+			id: 5,
 			img: './img/blog-img5.jpg',
 			title: 'The best fantasy books to read before sleep'
 		},
 		{
+			id: 6,
 			img: './img/blog-img6.jpg',
 			title: 'Motivational books that will change your life'
 		},
 		{
+			id: 7,
 			img: './img/blog-img7.jpg',
 			title: 'TOP 10 popular books for babies 0-3 years old'
 		},
 		{
+			id: 8,
 			img: './img/blog-img8.jpg',
 			title: 'The greatest sea adventure books of all time'
 		},
 		{
+			id: 9,
 			img: './img/blog-img9.jpg',
 			title: 'Four stories that will heal every broken heart.'
 		},
 		{
+			id: 10,
 			img: './img/blog-img10.jpg',
 			title: 'The greatest science-fiction books of all time'
 		}
