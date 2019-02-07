@@ -7,6 +7,14 @@
 
 Bookr was originally developed by a team of developers at [Lambda School](https://github.com/LambdaSchool).
 
+
+## Table of contents
+
+* [Technologies used and dependencies](#built-with)
+* [Installation](#installation)
+* [Contribution guidelines](#contribution-guidelines)
+* [License](#license)
+
 ## Built with
 
 * HTML5
@@ -23,7 +31,7 @@ Bookr was originally developed by a team of developers at [Lambda School](https:
 
 ## Installation
 
-/work in progress/
+1. Clone the repository
 
 ## Contribution guidelines
 
