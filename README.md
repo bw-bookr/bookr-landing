@@ -7,6 +7,12 @@
 
 Bookr was originally developed by a team of developers at [Lambda School](https://github.com/LambdaSchool).
 
+## Built with
+
+* HTML5
+* CSS3
+* JavaScript (ECMAScript 6+)
+
 ## Dependencies
 
 * [Bootstrap 4.1.7](https://getbootstrap.com)
