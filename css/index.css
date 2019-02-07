@@ -816,6 +816,14 @@ header .product-by p {
 .contact .contact-form form {
   margin: 1.5rem auto;
 }
+.contact .contact-form input[type="email"].is-valid {
+  border: 2px solid #17c671;
+  box-shadow: 0 5px 5.5px #17c671;
+}
+.contact .contact-form input[type="email"].is-invalid {
+  border: 2px solid #c4183c;
+  box-shadow: 0 5px 5.5px #c4183c;
+}
 .contact .contact-form input[type="submit"] {
   border-radius: 50px;
   display: flex;
