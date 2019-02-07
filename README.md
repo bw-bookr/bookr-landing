@@ -80,7 +80,7 @@ Use the [GitHub issue tracker](https://github.com/bw-bookr/bookr-landing/issues)
 Keep in mind that `Bookr` intends to be simple webpage
 Feel free to rewrite it using your favorite framework or library (i.e. using Angular, Vue or React) in the forked repository.
 
-## Commit messages
+### Commit messages
 
 Commit messages should includes a GitHub reference number and an easy to understand sentence describing the work you did.
 
