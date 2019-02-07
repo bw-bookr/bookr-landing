@@ -9,7 +9,11 @@ Bookr was originally developed by a team of developers at [Lambda School](https:
 
 ## Dependencies
 
-/work in progress/
+* [Bootstrap 4.1.7](https://getbootstrap.com)
+* [jQuery 3.3.1](http://jquery.com)
+* [Popper.js 1.14.3](https://popper.js.org)
+* [Font Awesome 4.7.0](https://fontawesome.com)
+* [aos (next)](https://github.com/michalsnik/aos)
 
 ## Installation
 
