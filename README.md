@@ -7,13 +7,17 @@
 
 Bookr was originally developed by a team of developers at [Lambda School](https://github.com/LambdaSchool).
 
-
 ## Table of contents
 
+* [Demo](#demo)
 * [Technologies used and dependencies](#built-with)
 * [Installation](#installation)
 * [Contribution guidelines](#contribution-guidelines)
 * [License](#license)
+
+## Demo
+
+Check out the demo here: [DEMO](https://bookrmarketing3.netlify.com).
 
 ## Built with
 
