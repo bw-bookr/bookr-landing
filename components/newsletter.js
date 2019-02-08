@@ -36,12 +36,20 @@ class NewsletterPanel {
 
 		const newsletterEmailInput = document.createElement('input');
 		newsletterEmailInput.setAttribute('type', 'email');
+		newsletterEmailInput.setAttribute('id', 'newsletterEmailInput');
 		newsletterEmailInput.setAttribute('placeholder', 'Email address');
 		newsletterEmailInput.classList.add('form-control');
 
 		const newsletterSubmit = document.createElement('button');
 		newsletterSubmit.textContent = 'Subscribe';
 		newsletterSubmit.classList.add('btn', 'btn-primary');
+		newsletterSubmit.setAttribute('id', 'newsletterSubmit');
+		newsletterSubmit.disabled = true;
+
+		newsletterSubmit.addEventListener('click', (e) => {
+			e.preventDefault();
+			this.onSubmit();
+		});
 
 		formGroup.appendChild(newsletterEmailInput);
 		formGroup.appendChild(newsletterSubmit);
@@ -50,6 +58,30 @@ class NewsletterPanel {
 		container.appendChild(row2);
 		this.element.appendChild(container);
 	}
+
+	onSubmit(){
+		const email = this.element.querySelector('#newsletterEmailInput').value;
+		alert(`Your email address: ${email} is too good to be added to our newsletter. That's why we return it to you!`);
+
+		this.element.querySelector('#newsletterEmailInput').value = "";
+		this.element.querySelector('#newsletterEmailInput').classList.remove('is-valid');
+		this.element.querySelector('#newsletterSubmit').disabled = true;
+	}
 }
 
 const newsletter = new NewsletterPanel(document.querySelector('.newsletter'));
+
+
+newsletter.element.querySelector('#newsletterEmailInput').addEventListener('change', () => {
+	if(validateEmail(newsletter.element.querySelector('#newsletterEmailInput').value)){
+		newsletter.element.querySelector('#newsletterEmailInput').classList.remove('is-invalid');
+		newsletter.element.querySelector('#newsletterEmailInput').classList.add('is-valid');
+
+		newsletter.element.querySelector('#newsletterSubmit').disabled = false;
+	}else{
+		newsletter.element.querySelector('#newsletterEmailInput').classList.remove('is-valid');
+		newsletter.element.querySelector('#newsletterEmailInput').classList.add('is-invalid');
+		
+		newsletter.element.querySelector('#newsletterSubmit').disabled = true;
+    }
+});

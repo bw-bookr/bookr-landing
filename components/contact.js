@@ -70,7 +70,7 @@ class ContactForm {
 		formGroupRight.classList.add('form-group');
 
 		const rightLabel = document.createElement('label');
-		rightLabel.textContent = "Full Name";
+		rightLabel.textContent = "Email";
 		rightLabel.setAttribute('for', 'contactFormFullName');
 
 		formGroupRight.appendChild(rightLabel);
@@ -118,13 +118,49 @@ class ContactForm {
 		const submit = document.createElement('input');
 		submit.classList.add('btn', 'btn-primary');
 		submit.setAttribute('type', 'submit');
+		submit.setAttribute('id', 'contactFormSubmit');
 		submit.setAttribute('value', 'Send your message');
+		submit.disabled = true;
+		
+		submit.addEventListener('click', (e) => {
+			e.preventDefault();
+			this.onSubmit();
+		});
 		
 		form.appendChild(submit);
 
 		contactForm.appendChild(form);
 		selector.appendChild(contactForm);
 	}
+
+	onSubmit(){
+		const fullName = this.element.querySelector('#contactFormFullName').value;
+		const email = this.element.querySelector('#contactFormEmail').value;
+		const content = this.element.querySelector('#contactFormInput').value;
+
+		alert(`${fullName} - your message: \n\nfrom: ${fullName}, (${email})\ncontent: ${content}\n\n has been sent to the black hole (or /dev/null, depending on what is closer)!`);
+
+		this.element.querySelector('#contactFormFullName').value = "";
+		this.element.querySelector('#contactFormEmail').value = "";
+		this.element.querySelector('#contactFormInput').value = "";
+
+		this.element.querySelector('#contactFormEmail').classList.remove('is-valid');
+		this.element.querySelector('#contactFormSubmit').disabled = true;
+	}
 }
 
 const contactform = new ContactForm(document.querySelector('.contact'));
+
+contactform.element.querySelector('#contactFormEmail').addEventListener('change', () => {
+	if(validateEmail(contactform.element.querySelector('#contactFormEmail').value)){
+		contactform.element.querySelector('#contactFormEmail').classList.remove('is-invalid');
+		contactform.element.querySelector('#contactFormEmail').classList.add('is-valid');
+
+		contactform.element.querySelector('#contactFormSubmit').disabled = false;
+	}else{
+		contactform.element.querySelector('#contactFormEmail').classList.remove('is-valid');
+		contactform.element.querySelector('#contactFormEmail').classList.add('is-invalid');
+		
+		contactform.element.querySelector('#contactFormSubmit').disabled = true;
+    }
+});
